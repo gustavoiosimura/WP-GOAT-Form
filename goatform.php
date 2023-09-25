@@ -2,7 +2,7 @@
 /*
 Plugin Name: GOAT FORM
 Description: Enables non-technical WordPress creators to create Forms
-Version: 1.3
+Version: 1.0
 Author: Gustavo Iosimura
 */
 
