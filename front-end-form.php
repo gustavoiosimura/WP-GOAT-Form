@@ -1,5 +1,4 @@
-<?php
-// front-end-form.php
+<?php 
 
 // Define a function to render the form using a shortcode
 function render_goat_form($atts) {
@@ -133,7 +132,7 @@ function process_goat_form() {
 
 
 
-// Register the admin-post.php action for form processing
+// Register the admin-post.php action
 add_action('admin_post_process_goat_form', 'process_goat_form');
 add_action('admin_post_nopriv_process_goat_form', 'process_goat_form');
 ?>

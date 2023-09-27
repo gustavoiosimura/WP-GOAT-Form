@@ -1,11 +1,11 @@
-<?php
-// admin-interface.php
+<?php 
 
 // Add a meta box to define form fields
 function custom_forms_meta_box() {
     add_meta_box('custom-form-fields', 'Form Fields', 'custom_form_fields_callback', 'custom_form', 'normal', 'high');
 }
 add_action('add_meta_boxes', 'custom_forms_meta_box');
+
 
 // Callback function for the meta box
 function custom_form_fields_callback($post) {
@@ -75,6 +75,7 @@ function custom_form_fields_script() {
                                 const { dispatch } = wp.data;
                                 dispatch('core/editor').savePost();
                             }
+
                         }
                     }
                 });

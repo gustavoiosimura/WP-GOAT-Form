@@ -1,6 +1,5 @@
-<?php
-// form-processing.php
-
+<?php 
+ 
 // Create the database tables when the plugin is activated
 function custom_forms_install() {
     global $wpdb;
@@ -103,6 +102,7 @@ function custom_forms_save_post($post_id) {
         update_post_meta($post_id, '_form_shortcode', $shortcode);
     }
 }
+add_action('save_post_custom_form', 'custom_forms_save_post');
 
 // Function to update form fields for a specific form
 function custom_forms_update_fields($form_id, $new_fields) {
